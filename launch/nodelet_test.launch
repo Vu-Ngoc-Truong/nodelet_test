@@ -1,0 +1,10 @@
+<launch>
+  <!-- Launch the usb camera acquisition node -->
+  <node pkg="nodelet" type="nodelet" name="camera_nodelet" args="standalone nodelet_test/CameraForwardNodelet" output="screen">
+    <!-- <param name="camera_frame_id" value="$(arg frame_id)"/> -->
+    <remap from="/image_raw" to="/camera/image_raw"/>
+    <remap from="/image_raw_forward" to="/camera/image_raw_forward"/>
+    <remap from="/image_raw/compressed" to="/camera/image/compressed"/>
+    <remap from="/image_raw/compressed_forward" to="/front_fiducial_images/compressed"/>
+  </node>
+</launch>

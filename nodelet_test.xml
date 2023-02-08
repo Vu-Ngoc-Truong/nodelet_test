@@ -1,7 +1,7 @@
 <library path="lib/libnodelet_test">
-  <class name="nodelet_test/CameraForwardNodelet" type="nodelet_tutorial_math::CameraForwardNodelet" base_class_type="nodelet::Nodelet">
+  <class name="nodelet_test/CameraForwardNodelet" type="nodelet_test::CameraForwardNodelet" base_class_type="nodelet::Nodelet">
     <description>
-      A node to add a value and republish.
+      A nodelet subcriber camera topic and forward it.
     </description>
   </class>
 </library>
